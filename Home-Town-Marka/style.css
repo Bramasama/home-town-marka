@@ -1,0 +1,234 @@
+body {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background-color: #1d50ae;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('images/marka-background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes cadeey {
+    0% {
+        color: rgb(225, 229, 244);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        color: rgb(0, 102, 255);
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        color: rgb(0, 83, 167);
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        color: rgb(255, 255, 255);
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.welcome {
+    margin: 0;
+    animation-name: cadeey;
+    animation-duration: 5s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+
+.somalia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 2em;
+}
+
+.section {
+    background-color: aliceblue;
+    width: 100%;
+    height: 63rem;
+    display: flex;
+    color: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.image-container {
+    flex: 1 1 30%;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    font-size: 50px;
+    animation: slide-in-left 2s ease-out forwards;
+    color: #ffffff;
+}
+
+.slide-right {
+    animation: slide-right 3s ease-out forwards;
+    background: radial-gradient(#ffffff, transparent);
+    padding: 3rem;
+    font-size: 2em;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1d50ae;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+}
+
+
+.section.things-to-do.beach {
+    background-image: url('/Home-Town-Marka/images/beach.jpg');
+
+}
+
+.section.things-to-do.historic-sites {
+    background-image: url('/Home-Town-Marka/images/historical-fort.jpg');
+
+}
+
+.section.things-to-do.local-cuisine {
+    background-image: url('/Home-Town-Marka/images/seafood.jpg');
+
+}
+
+.section.section-about {
+    background-image: url('/Home-Town-Marka/images/about.jpg');
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling */
+}
